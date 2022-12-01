@@ -1,0 +1,7 @@
+{
+  "name": "musique promo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
