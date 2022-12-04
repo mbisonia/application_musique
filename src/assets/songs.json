@@ -1,0 +1,75 @@
+{
+    "song" : [
+        {
+            "id": 1,
+            "titre": "I want to let go",
+            "auteur": "Locko",
+            "id_album": 1,
+            "url": "songs/musique1.m4a"
+        },
+        {
+            "id": 2,
+            "titre": "juste une photo de toi",
+            "auteur": "M Pokora",
+            "id_album": 1,
+            "url": "songs/musique2.m4a"
+        },
+        {
+            "id": 3,
+            "titre": "Lomgtemps",
+            "auteur": "Amir",
+            "id_album": 1,
+            "url": "songs/musique3.m4a"
+        },
+        {
+            "id": 4,
+            "titre": "Je veux me poser",
+            "auteur": "Daniella",
+            "id_album": 2,
+            "url": "songs/musique4.m4a"
+        },
+        {
+            "id": 5,
+            "titre": "Etat d'amour",
+            "auteur": "Amir",
+            "id_album": 2,
+            "url": "songs/musique5.m4a"
+        },
+        {
+            "id": 6,
+            "titre": "Maamou",
+            "auteur": "Dadju",
+            "id_album": 2,
+            "url": "songs/musique6.m4a"
+        },
+        {
+            "id": 7,
+            "titre": "Souffrance d'amour",
+            "auteur": "Ben Decca",
+            "id_album": 3,
+            "url": "songs/musique7.m4a"
+        },
+        {
+            "id": 8,
+            "titre": "Juste une dance",
+            "auteur": "Fally Ipupa",
+            "id_album": 3,
+            "url": "songs/musique8.m4a"
+        },
+        {
+            "id": 9,
+            "titre": "Faya faya",
+            "auteur": "Mimie",
+            "id_album": 3,
+            "url": "songs/musique9.m4a"
+        },
+        {
+            "id": 10,
+            "titre": "Ma wouman",
+            "auteur": "Dadju",
+            "id_album": 3,
+            "url": "songs/musique10.m4a"
+        }
+
+    ]
+}

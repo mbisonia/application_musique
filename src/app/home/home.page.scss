@@ -1,27 +1,28 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-tab-bar{
+  --background: var(--ion-color-primary);
+}
+ion-tab-button{
+  --color-selected: #fff;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+.player{
+  height: 55px;
+  background: var(--ion-color-warning-contrast);
+  font-family: 'Spotify';
+  color: #fff;
+  font-size: small;
+  img{
+      height: 55px;
+  }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  .progress-bar{
+      width: 100%;
+      height: 2px;
+      background: #cbc6c6;
+      .progress{
+          background-color: rgb(251, 244, 244);
+          height: 100%;
+      }
+  }
+  
 }

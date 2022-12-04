@@ -1,0 +1,65 @@
+ion-content{
+
+    --background: url("../../assets/album/m26.jpeg") no-repeat center center/cover;
+    opacity: 3.0;
+    
+}
+.stly{
+    --padding-top: -2px;
+}
+.sly{
+    --background: linear-gradient(#E39BB3,rgb(90, 72, 72)), url("/../../../assets/album/borntodie.jpg") no-repeat center center/cover;
+}
+
+.section-header{
+    color: #000;
+    font-family: 'Spotify';
+    font-weight: bold;
+    padding-top: 0%;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+ion-slides{
+    margin-bottom: 20px;
+}
+.title{
+    color: #000;
+    font-family: 'Spotify';
+    font-size: small;
+}
+ion-slide{
+    display: inline;
+    text-align: left;
+}
+.player{
+    height: 55px;
+    background: var(--ion-color-warning-contrast);
+    font-family: 'Spotify';
+    color: #fff;
+    font-size: small;
+    img{
+        height: 55px;
+    }
+  
+    .progress-bar{
+        width: 100%;
+        height: 2px;
+        background: #cbc6c6;
+        .progress{
+            background-color: rgb(251, 244, 244);
+            height: 100%;
+        }
+    }
+    
+  }
+  .swiper-slide-active{
+    transform: scale(1.05, 1.05);
+    ion-card{
+        img{
+            transform: scale(1, 1);
+        }
+    }
+  }
+  .swiper-slide{
+    transform: 400ms all ease-in-out;
+  }

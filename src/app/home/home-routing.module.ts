@@ -6,6 +6,30 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+    children : [
+      {
+        path: 'accueil',
+        loadChildren: () => import('../accueil/accueil.module').then( m => m.AccueilPageModule)
+      },
+      {
+        path: 'album',
+        loadChildren: () => import('../album/album.module').then( m => m.AlbumPageModule)
+      },
+      {
+        path: 'a-propos',
+        loadChildren: () => import('../a-propos/a-propos.module').then( m => m.AProposPageModule)
+      },
+      {
+        path: '',
+        redirectTo: '/home/accueil',
+        pathMatch: 'full'
+      }
+    ]
+  },
+  {
+    path: '',
+    redirectTo: '/home/accueil',
+    pathMatch: 'full'
   }
 ];
 

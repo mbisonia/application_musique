@@ -1,0 +1,21 @@
+ { "album": [
+        {
+            "id": 1,
+            "titreA": "Zook",
+            "image": "assets/album/m15.jpeg",
+            "backgroundColor": "#BF6AA6"
+        },
+        {
+            "id": 2,
+            "titreA": "Slow",
+            "image": "assets/album/m16.jpeg",
+            "backgroundColor": "#93D0E0"
+        },
+        {
+            "id": 3,
+            "titreA": "Classique",
+            "image": "assets/album/m10.jpg",
+            "backgroundColor": "#7F7F7F"
+        }
+    ]
+}

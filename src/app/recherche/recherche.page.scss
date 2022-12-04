@@ -1,0 +1,19 @@
+ion-content{
+
+    --opacity: 3.0;
+    
+}
+ion-toolbar{
+    --background: var(--ion-color-primary)
+}
+ion-item{
+    --ion-item-background : transparent;
+    color : #000;
+    p{
+        color:#949494;
+    }
+}
+ion-list{
+    --ion-background-color: url("../../assets/album/m26.jpeg") no-repeat center center/cover;
+}
+

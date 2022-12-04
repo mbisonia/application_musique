@@ -1,0 +1,73 @@
+ion-content{
+    --background: url("../../assets/album/m26.jpeg") no-repeat center center/cover;
+  }
+  ion-toolbar {
+    --opacity: .5
+  }
+  .img_box {
+    padding: 20px;
+   // background-color: #1d1d1d;
+   
+  }
+  .content{
+    padding-top: 70px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .post{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    //height: 35%;
+  }
+  ion-icon{
+    width: 20px;
+    height: 20px;
+  }
+
+  .volume{
+    display: flex;
+    justify-content: space-around;
+  }
+  .image{
+    height:330px;
+    width:100%;
+    border-radius: 10px;
+  }
+  #container {
+    text-align: center;
+    padding: 20px;
+  }
+  h2 {
+    color: white;
+    font-size: 21px;
+    margin: 0px 0px;
+  }
+  ion-range {
+    padding: 0px 9px;
+    --bar-height: 2px;
+  }
+  p {
+    color: black;
+    font-size: 13px;
+    margin: 0px;
+    font-weight: 500;
+  }
+  .flex_box {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ion-button {
+  height: 66px;
+  min-height: max-content;
+  margin: 0px 10px;
+  font-size: 12px;
+}

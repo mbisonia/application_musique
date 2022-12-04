@@ -1,0 +1,59 @@
+<ion-content >
+  <ion-card class="sly section-header">
+    <ion-card-header>
+      <img src="assets/album/m2-m2.jpeg" alt="">
+      <ion-card-subtitle color="light">Mon lecteur audio</ion-card-subtitle><br>
+      
+    </ion-card-header>
+    <ion-card-content>
+    </ion-card-content>
+  </ion-card >
+  <div class="stly">
+  <ion-row class="ion-no-padding" >
+    <ion-col size="12">
+        <h1 class="section-header" style="color: black;"><strong> Vivez cette sensation magique</strong></h1>
+    </ion-col>
+
+    <ion-slides [options]="slidesOptions" class="ion-margin-top">
+      <ion-slide>
+        <img src="assets/album/m5-m5.jpeg">
+        <span class="title" style="color: black;"><strong>ZOOK</strong></span>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/album/m8.png">
+        <span class="title" style="color: black;"><strong>SLOW</strong></span>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/album/m3.jpeg">
+        <span class="title" style="color: black;"><strong>CLASSIQUE</strong></span>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/album/m10.jpg">
+        <span class="title" style="color: black;"><strong>AMOUR</strong></span>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/album/m11.jpg">
+        <span class="title" style="color: black;">PASSION</span>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+</div>
+<div class="player">
+  <div class="progress-bar">
+    <div class="progress" [style.width]="progress + '%'"></div>
+   </div>
+      <ion-row class="ion-no-padding">
+        <ion-col size="2" class="ion-no-padding">
+          <img src="assets/album/m1.jpeg" alt="">
+        </ion-col>
+        <ion-col size="8" class="ion-align-self-center" color="light">
+          <b>L'ART DANS LA MUSIQUE</b><br>
+          <span>LA MELODIE</span>
+        </ion-col>
+        <ion-col size="2" class="ion-text-center ion-no-padding ion-align-self-center">
+          <ion-icon name="musical-notes-outline" color="light" size="large"></ion-icon>
+          <ion-icon name="musical-notes-outline" color="light" size="large"></ion-icon>
+        </ion-col>
+      </ion-row>
+</div>
+  </ion-content>

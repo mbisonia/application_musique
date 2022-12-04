@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar placeholder="Filter Pizza" inputmode="decimal" type="decimal" (ionChange)="searchItem($event)" [debounce]="250" showCancelButton="always"></ion-searchbar>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center image-box">
+    <img src="assets/album/m2-m2.jpeg" alt="">
+  </div>
+  <ion-row>
+    <ion-col size="12" class="album-info">
+      <p>album titre</p>
+      <span>des</span>
+    </ion-col>
+  </ion-row>
+  <ion-list>
+    <div *ngFor="let item of resultat">
+    <ion-item  routerLinkActive="router-link-active" >
+      <ion-label color="dark"> <p>{{item.titre}}</p></ion-label>
+      <ion-icon slot="end" size="small" name="ellipsis-horizontal" color="dark"></ion-icon>
+    </ion-item>
+  </div>
+  </ion-list>
+</ion-content>
+

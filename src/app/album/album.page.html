@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+ <ion-item lines="none">
+  <ion-button   fill="clear" slot="start" color="light">
+    <ion-icon slot="icon-only" name="musical-notes-outline"></ion-icon><ion-icon slot="icon-only" name="musical-notes-outline"></ion-icon>
+  </ion-button>
+    <ion-menu-button slot="start" color="light"></ion-menu-button>
+    <ion-avatar slot="end">
+      <img src="assets/album/m23.jpg"/>
+    </ion-avatar>
+  
+ </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+<div class="main-header">
+<ion-grid>
+  <ion-row>
+    <ion-col size="6">
+      <ion-label >
+        <p>
+          <ion-chip color="light">
+            <ion-label class="ion-text-wrap">Album</ion-label>
+          </ion-chip>
+        </p>
+      </ion-label>
+    </ion-col>
+    <!-- <ion-col size="6" class="ion-text-end">
+      <ion-button color="light" size="small">
+       <ion-text color="primary">
+        TOP UP
+       </ion-text>
+       <ion-icon slot="start" color="primary" name="add"></ion-icon>
+      </ion-button>
+    </ion-col> -->
+  </ion-row>
+  <ion-row class="ion-margin-horizontal ion-margin-top">
+    <ion-col >
+      <ion-label color="light">
+      </ion-label>
+    </ion-col>
+  </ion-row><br><br><br><br><br><br><br><br><br><br><br><br>
+  <ion-row class="ion-margin-horizontal">
+    <ion-col size="12" *ngFor="let item of musique">
+      <ion-card class="ion-text-center" [routerLink]="['/song']" routerLinkActive="router-link-active" (click)="albumDetail(item)">
+        <ion-card-header>
+          
+          <div class="text-align-center">
+            <ion-card-subtitle color="dark">{{ item.titreA}}</ion-card-subtitle>
+            <ion-thumbnail style="background-color: #FFAEC9;">
+              <img src="{{item.image}}" />
+            </ion-thumbnail>
+          </div>
+         
+        </ion-card-header>
+        <ion-card-content>
+          <ion-label color="dark">Mon label</ion-label>
+        </ion-card-content>
+      </ion-card>
+      
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+</div>
+</ion-content>

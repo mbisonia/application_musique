@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="light"><h3>Lecteur MP3</h3></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <div class="img_box">
+      <img src="assets/album/m2-m2.jpeg" alt="" class="image">
+    </div>
+    <div class="post">
+      <div class="container">
+ 
+  <ion-range min="0" max="{{ duration }}" [(ngModel)]="position"  color="dark" >
+    <!-- //(ionChange)="rangeChange($event)" {{val}} -->
+  </ion-range>
+  <ion-grid>
+    <ion-row>
+      <ion-col align="left" color="dark"><p>{{ position*1000|date:'mm:ss ' }}</p></ion-col>
+      <!-- //{{min}}:{{sc}} -->
+      <ion-col align="right" color="dark"><p>{{ duration*1000|date:'mm:ss ' }}</p></ion-col>
+      <!--  {{musique1.time.min}}:{{musique1.time.sc}} -->
+    </ion-row>
+</ion-grid>
+
+
+      </div>
+
+      <div class="flex_box">
+        <ion-button fill="clear" color="dark" (click)="preview()">
+          <ion-icon slot="icon-only" name="play-back"></ion-icon>
+        </ion-button>
+        <div>
+          <ion-button fill="clear" color="dark" (click)="playPause(ob)">
+            <ion-icon slot="icon-only" color="dak" [name]="playIcon" ></ion-icon>
+          </ion-button>
+        </div>
+          <ion-button fill="clear" color="dark" (click)="next()">
+            <ion-icon slot="icon-only" name="play-forward" ></ion-icon>
+          </ion-button>
+        </div>
+        <div class="dligne">
+          <ion-grid>
+            <ion-row>
+              <ion-col align="left">
+                <div>
+                  <ion-button  fill="clear" color="dark" (click)="volumemuet(ob)">
+                   <ion-icon slot="start" name="volume-mute-outline" ></ion-icon>
+                  </ion-button>
+                    <ion-button  fill="clear" color="dark" *ngIf="vol >= 1"[disabled]="vol" (click)="volumehaut(ob)">
+                     <ion-icon slot="icon-only" name="volume-high-outline"></ion-icon>
+                    </ion-button>
+                    <ion-button  fill="clear" color="dark" *ngIf="vol < 1" (click)="volumehaut(ob)">
+                      <ion-icon slot="icon-only" name="volume-high-outline"></ion-icon>
+                     </ion-button>
+                     <ion-button  fill="clear" color="dark" *ngIf="vol < 0"[disabled]="vol" (click)="volumebas(ob)">
+                      <ion-icon slot="icon-only" name="volume-low-outline"></ion-icon>
+                     </ion-button>
+                     <ion-button  fill="clear" color="dark" *ngIf="vol >= 0"[disabled]="vol" (click)="volumebas(ob)">
+                      <ion-icon slot="icon-only" name="volume-low-outline"></ion-icon>
+                     </ion-button>
+                </div>
+               
+              </ion-col>
+              <ion-col>
+                <ion-button  fill="clear" color="dark" (click)="repeat(ob)">
+                  <ion-icon slot="end" name="repeat-outline"></ion-icon>
+                </ion-button>
+                 
+                    
+                 
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+    </div>
+ 
+</ion-content>
